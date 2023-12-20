@@ -1,0 +1,273 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el menú */
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para los iconos de redes sociales */
+footer a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+footer a .fab {
+    font-size: 24px;
+}
+
+footer a[href*="facebook"] .fab {
+    color: #3b5998;
+}
+
+footer a[href*="instagram"] .fab {
+    color: #C13584;
+}
+
+footer a[href*="xing"] .fab {
+    color: #006567;
+}
+
+/* Estilos para las secciones del contenido principal */
+main section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+main section h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+main section p {
+    color: #666;
+}
+
+/* Estilos para el contenido principal */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Estilos para el logo */
+#logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 150px; /* Ajusta esto según el tamaño que desees para tu logo */
+}
+
+/* Estilos para el contenido principal en pantallas pequeñas */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    main section {
+        margin: 10px 0;
+    }
+}
+
+/* Estilos para el contenido principal */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Estilos para el pie de página, los logos y los íconos de las redes sociales */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logos img {
+    height: 50px; /* Ajusta esto según el tamaño que desees para tus logos */
+    margin-right: 10px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    background-color: #c42c2c;
+}
+
+#logo {
+    position: relative; /* o absolute, fixed, o sticky según tus necesidades */
+    z-index: 10; /* cualquier número mayor que el z-index del menú */
+}
+
+#logo {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu {
+    position: relative;
+    z-index: 1;
+}
+
+#logo {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel {
+    width: 100%;
+    height: 300px; /* Ajusta este valor a la altura que desees */
+    margin: auto;
+    overflow: hidden; /* Esto es para asegurar que las imágenes no se desborden del carrusel */
+}
+
+.carousel img {
+    width: 50%;
+    height: 50%; /* Esto hará que las imágenes se ajusten a la altura del carrusel */
+    object-fit: cover; /* Esto hará que las imágenes cubran todo el carrusel sin distorsionarse */
+}
+
+.slick-prev, .slick-next {
+    display: none !important;
+}
+
+main div {
+    margin-bottom: 20px; /* Añade espacio debajo de cada div */
+}
+
+header {
+    width: 100%; /* Esto hace que el menú ocupe el ancho total de la página */
+}
+body {
+    margin: 0; /* Esto elimina el margen del cuerpo */
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255) !important;
+}
+
+header {
+    background-color: #000000;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .logos img {
+    margin-left: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content .logos {
+    margin-top: 20px; /* Ajusta este valor según tus necesidades */
+}
+
+.footer-content iframe {
+    width: 100%;
+    height: 450px; /* Ajusta este valor según tus necesidades */
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ajusta este valor según tus necesidades */
+}
+   
+  .buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 48px; /* 80% de 60px */
+    height: 48px; /* 80% de 60px */
+    line-height: 48px; /* 80% de 60px */
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+
+  
